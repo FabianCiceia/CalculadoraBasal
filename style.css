@@ -32,19 +32,27 @@ button:active {
 	transform: scale(0.95);
     background-color: #181414;
 }
+#prueba{
+    display: block;
+    border: #FFFFFF solid;
+    padding: 100px;
+    border-radius: 30px; 
 
+}
 #contenedor{
     display: grid;
+     
+       
     grid-template-columns: 
     repeat(
         auto-fit,
-        minmax(500px, 1fr)
+        minmax(400px, 1fr)
     );
     gap: 32px;
 }
 
 #calculadora{
-    min-width: 300px;
+    
     color: #FFFFFF;
     text-align: center;
     display: inline-block;

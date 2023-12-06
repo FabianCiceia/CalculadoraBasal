@@ -1,0 +1,4 @@
+referecias de la paleta de colores:
+https://www.roc21.com/2019/07/15/manual-de-diseno-dark-themes/
+diseño responsive con CSS (es muy bueno):
+https://www.youtube.com/shorts/CcBVnXZ4Mc0

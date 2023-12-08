@@ -1,17 +1,19 @@
-let BOTON = document.getElementById('sumar_boton');
-let FLU = document.getElementById('flu');
-let MAN = document.getElementById('man');
-let ENTRADA = document.getElementById('peso');
-let ERROR = document.getElementById('mensaje_error')
+const BOTON = document.getElementById('sumar_boton');
+const FLU = document.getElementById('flu');
+const MAN = document.getElementById('man');
+const ENTRADA = document.getElementById('peso');
+const ERROR = document.getElementById('mensaje_error')
 BOTON.addEventListener('click',calcular_peso);
 
 function calcular_peso(){
-    let peso_obtenido = parseFloat(document.getElementById('peso').value);
+    const peso_obtenido = parseInt(ENTRADA.value);
     let volumen ;
     let mantenimiento;
     let mm;
 
     if(isNaN(peso_obtenido)){
+         
+        
          ERROR.style.display = 'block';
          MAN.innerHTML = null;
          FLU.innerHTML = null;
@@ -28,7 +30,7 @@ function calcular_peso(){
         mantenimiento = (volumen/24);
         mm = (mantenimiento*1.5);
         MAN.innerHTML = ` ${mantenimiento.toFixed(2)} cc/hr `;
-        FLU.innerHTML = `m+m/2 ${mm} cc/hr `
+        FLU.innerHTML = `m+m/2 ${mm.toFixed(2)} cc/hr `
         ERROR.style.display = null;
     }   
 }

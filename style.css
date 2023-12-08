@@ -1,16 +1,15 @@
 body{
     background-color: #121212;/*temporal poner #121212 para el final */
   
-    
-    
+
 
 }
 
 input {
-	width: 70%;
+	width: 100%;
     padding: 12px 15px;
     border: none;
-    font-size: 200%;
+    font-size: 2cm;
     background-color: #121212;
     color: #FFFFFF;
 }
@@ -33,14 +32,14 @@ button:active {
 	transform: scale(0.95);
     background-color: #181414;
 }
-#prueba{
+#contenedor{
     display: block;
-    border: #FFFFFF solid;
+    border: #BB86FC solid;
     padding: 100px;
     border-radius: 30px; 
 
 }
-#contenedor{
+#responsive{
     display: grid;
     font-size:20px;
        
@@ -57,18 +56,19 @@ button:active {
     color: #FFFFFF;
     text-align: center;
     display: inline-block;
+    
 }
 
 #contenedorboton{
     min-width: 300px;
-    border: 1px solid #FFFFFF; 
+    border: 1px solid #BB86FC; 
     padding: 10px; 
     display: inline-flex;
     border-radius: 30px;
 }
 
 #detalle{   
-    border: #FFFFFF solid;
+    border: #BB86FC solid;
     border-radius: 20px;
     padding: 10px; 
     color: #FFFFFF;
@@ -78,27 +78,18 @@ button:active {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-/*Para futuramente*/
-#error{
+.error{
     color: red;
     font-weight: bold;
     display: none;
+    font-size: 30px;
+    
 }
 
 .resultado{
-    color: #0A81D1;
+    color: #f7f7f7; 
     font-weight: bold;
-    font-size: 25px;
+    font-size: 30px;
     margin-bottom: 5px;
-    display: none;
+    padding: 1px;
 }

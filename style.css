@@ -1,6 +1,5 @@
 body{
-    background-color: #121212;/*temporal poner #121212 para el final */
-  
+    background-color: #121212;
 
 
 }
@@ -15,7 +14,18 @@ input {
 }
 input:focus{
     outline: none;
+    
 }
+/* Eliminar las flecha del input*/
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+input[type=number] { -moz-appearance:textfield; }
+/***************************************************/
 
 button {
     font-size: 150%;
@@ -32,6 +42,8 @@ button:active {
 	transform: scale(0.95);
     background-color: #181414;
 }
+
+
 #contenedor{
     display: block;
     border: #BB86FC solid;
